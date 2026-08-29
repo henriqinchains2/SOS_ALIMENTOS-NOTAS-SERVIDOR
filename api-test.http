@@ -1,0 +1,28 @@
+### Criar cliente
+POST https://sos-alimentos-servidor.onrender.com/api/clientes
+Content-Type: application/json
+
+{
+  "id": "3",
+  "cliente": "Empresa Teste",
+  "email": "teste@email.com",
+  "rua": "Rua A",
+  "bairro": "Centro",
+  "cidade": "SP"
+}
+
+### Criar Nota Fiscal
+POST https://sos-alimentos-servidor.onrender.com/api/notas
+Content-Type: application/json
+
+{
+  "idCliente": "3",
+  "cliente": "Empresa Teste",
+  "numeroNota": "NF-1001",
+  "email": "teste@email.com",
+  "valor": 250.75,
+  "dataEmissao": "2026-06-25",
+  "pago": false,
+  "enviado": false,
+  "img": "https://res.cloudinary.com/demo/image/upload/sample.jpg"
+}
